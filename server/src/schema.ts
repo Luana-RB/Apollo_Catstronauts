@@ -4,6 +4,18 @@ export const typeDefs = gql`
   type Query {
     "Get tracks array for homepage grid"
     tracksForHome: [Track!]!
+    track(id: ID!): Track
+  }
+
+  type Mutation {
+    incrementTrackViews(id: ID!): IncrementTrackViewsResponse!
+  }
+
+  type IncrementTrackViewsResponse {
+    code: Int!
+    success: Boolean!
+    message: String!
+    track: Track
   }
 
   "A track is a group of Modules that teaches about a specific topic"
@@ -19,6 +31,9 @@ export const typeDefs = gql`
     length: Int
     "The number of modules this track contains"
     modulesCount: Int
+    description: String
+    numberOfViews: Int
+    modules: [Module!]!
   }
 
   "Author of a complete Track"
@@ -28,5 +43,11 @@ export const typeDefs = gql`
     name: String!
     "Author's profile picture url"
     photo: String
+  }
+
+  type Module {
+    id: ID!
+    title: String!
+    length: Int
   }
 `;
