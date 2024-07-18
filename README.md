@@ -1,8 +1,6 @@
-# Odyssey Lift-off III: Arguments
+# Catstronauts
 
-Welcome to the companion app of Odyssey Lift-off III! You can [find the course lessons and instructions on Odyssey](https://odyssey.apollographql.com/lift-off-part3), Apollo's learning platform.
-
-You can [preview the completed demo app here](https://lift-off-client-demo.netlify.app/).
+This project was made for study based on the [course lessons and instructions on Odyssey](https://odyssey.apollographql.com/lift-off-part1), Apollo's learning platform.
 
 ## How to use this repo
 
